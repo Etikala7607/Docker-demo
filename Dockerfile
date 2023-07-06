@@ -12,7 +12,7 @@ RUN mvn install
 
 FROM tomcat:9
 
-COPY --from=builder /app/target/sample-1.0.3.jar 
+COPY --from=builder /app/target/sample-1.0.3.jar /usr/local/tomcat/webapps/
 
 EXPOSE 8080:8080
 
