@@ -12,4 +12,4 @@ EXPOSE 8080:8080
 
 FROM tomcat:9
 
-COPY --from=builder /myapp/war/usr/local/tomcat/webapps
+COPY --from=builder /myapp/war /usr/local/tomcat/webapps
