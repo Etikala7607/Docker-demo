@@ -14,3 +14,4 @@ COPY --from=builder /app/target/sample-1.0.3.jar .
 
 EXPOSE 8080
 
+CMD ["java", "-jar", "sample-1.0.3.jar"]
